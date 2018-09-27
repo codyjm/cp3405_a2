@@ -27,10 +27,12 @@
                     <li class="nav-item"> <a class="nav-link" href="#">FAQ</a></li>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <img class="account_icon" src="images/person-3x.png" alt="Sign In"/>
-                    <button type="button" class="btn btn-outline-danger my-2 my-sm-0" href="#">Sign Up</button>
-                </form>
+
+                <img class="account_icon" src="images/person-3x.png" alt="Sign In"/>
+
+                <!-- TODO change button to anchor tag to make button work? / or use JS -->
+
+                <button type="button" class="btn btn-outline-danger my-2 my-sm-0" >Sign Up</button>
             </div>
         </nav>
 
@@ -48,6 +50,14 @@
                 <div class="form-group">
                     <label for="password_input">Password</label>
                     <input type="password" class="form-control is-valid" id="password_input" placeholder="Password"/>
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password_input">Confirm Password</label>
+                    <input type="password" class="form-control is-valid" id="confirm_password_input" placeholder=" Confirm Password"/>
+                </div>
+                <div class="form-group">
+                    <label for="class_input">Class Code (optional)</label>
+                    <input type="text" class="form-control is-valid" placeholder="Class Code" id="class_input"/>
                 </div>
                 <button type="submit" class="btn btn-danger">Sign up</button>
 
