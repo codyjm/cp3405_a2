@@ -9,3 +9,15 @@
 .pricing_section {
     padding-bottom: 25px;
 }
+a:link {
+    text-decoration: none;
+    color: red;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    text-decoration: none;
+    color: red;
+}
