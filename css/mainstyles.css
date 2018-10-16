@@ -21,7 +21,30 @@ a:hover {
     text-decoration: none;
     color: darkgrey;
 }
+a.disabled, a.disabled:hover {
+    color: black;
+}
 p.subheading {
     font-style: italic;
     font-size: 1em;
+    text-align: center;
+}
+table.teacher {
+    margin-left: auto;
+    margin-right: auto;
+    width:auto;
+    padding: 0.5em;
+    text-align: center;
+    border:1px solid darkgray;
+    border-collapse:separate;
+    border-radius:25px;
+    -moz-border-radius:25px;
+}
+th.tt {
+    padding: 1em;
+    border-bottom: 1px solid grey;
+}
+td.tt {
+    padding: 1em;
+    border-bottom: 1px solid darkgray;
 }
