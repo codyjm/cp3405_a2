@@ -11,13 +11,17 @@
 }
 a:link {
     text-decoration: none;
-    color: red;
-}
-a:hover {
-    text-decoration: none;
     color: white;
 }
 a:visited {
     text-decoration: none;
-    color: red;
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+    color: darkgrey;
+}
+p.subheading {
+    font-style: italic;
+    font-size: 1em;
 }
