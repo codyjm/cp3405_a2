@@ -11,7 +11,7 @@
 }
 a:link {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 a:visited {
     text-decoration: none;
@@ -21,8 +21,11 @@ a:hover {
     text-decoration: none;
     color: darkgrey;
 }
-a.disabled, a.disabled:hover {
+a.disabled {
     color: black;
+}
+a.disabled:hover {
+    color: grey;
 }
 p.subheading {
     font-style: italic;
@@ -46,5 +49,5 @@ th.tt {
 }
 td.tt {
     padding: 1em;
-    border-bottom: 1px solid darkgray;
+    border-bottom: 1px solid lightgrey;
 }
