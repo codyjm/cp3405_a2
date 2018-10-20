@@ -1,150 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-* {
-    box-sizing: border-box;
-}
-
-.columns {
-    float: left;
-    width: 33.3%;
-    padding: 8px;
-}
-
-.price {
-    list-style-type: none;
-    border: 1px solid #eee;
-    margin: 0;
-    padding: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-}
-
-.price:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-}
-
-.price .header {
-    background-color: #111;
-    color: white;
-    font-size: 25px;
-}
-
-.price li {
-    border-bottom: 1px solid #eee;
-    padding: 20px;
-    text-align: center;
-}
-
-.price .grey {
-    background-color: #eee;
-    font-size: 20px;
-}
-
-.button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-@media only screen and (max-width: 600px) {
-    .columns {
-        width: 100%;
-    }
-}
-</style> <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pricing Information</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
     <link href="css/mainstyles.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand"
-
-        href="index.html">ProSolv</a> <button class="navbar-toggler" type="button"
-
-        data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-
-        aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="index.html">ProSolv</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item"> <a class="nav-link" href="index.html">Home <span
-
-                class="sr-only">(current)</span></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="teachers.html">Teachers</a></li>
-          <li class="nav-item"> <a class="nav-link" href="students.html">Students</a></li>
-          <li class="nav-item active"> <a class="nav-link" href="pricing.html">Pricing</a></li>
-          <li class="nav-item"> <a class="nav-link" href="faq.html">FAQ</a></li>
+            <li class="nav-item"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+            <li class="nav-item"> <a class="nav-link" href="teachers.html">Teachers</a></li>
+            <li class="nav-item"> <a class="nav-link" href="students.html">Students</a></li>
+            <li class="nav-item active"> <a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li class="nav-item"> <a class="nav-link" href="faq.html">FAQ</a></li>
         </ul>
-        <form class="form-inline my-2 my-lg-0"> <img class="account_icon" src="images/person-3x.png"
-
-            alt="Sign In"> <a href="signin.html" class="btn btn-primary my-2 my-sm-0">Login</a>
-          <p>&nbsp;</p>
-          <a href="signup.html" class="btn btn-danger my-2 my-sm-0">Sign Up</a>
+        <form class="form-inline my-2 my-lg-0">
+            <img class="account_icon" src="images/person-3x.png" alt="Sign In"/>
+            <a href="signin.html" class="btn btn-primary my-2 my-sm-0">Login</a>
+            <p> </p>
+            <a href="signup.html" class="btn btn-danger my-2 my-sm-0">Sign Up</a>
         </form>
-      </div>
-    </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-8 mx-auto"> </div>
-      </div>
     </div>
-    <h2 style="text-align:center">The fastest way to learn code</h2>
-    <p style="text-align:center">Sighn up today, and get access to are exclusive
-      features such as quizzes, projects, learning plans and much
-      more. &nbsp; </p>
-    <div class="columns">
-      <ul class="price">
-        <li class="header">Basic</li>
+</nav>
+<header>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">ProSolv Plans</h1>
+                    <hr>
+                    <p class="subheading">Sign up today, and get access to our exclusive
+                        features such as quizzes, projects, learning plans and much
+                        more.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-8 mx-auto"> </div>
+    </div>
+</div>
+<h4 class="text-center">The Fastest Way to Learn Code</h4>
+<p class="text-center">We value the diversity of our students, and we pride ourselves on their individuality.
+    We try to reflect these values by offering plans tailored for all budget levels.</p>
+<div class="columns">
+    <ul class="price">
+        <li class="header">Entry</li>
         <li class="grey">Free</li>
         <li>XXX</li>
         <li>XXX</li>
         <li>XXX</li>
-        <li class="grey"><a href="#" class="button">Sign Up</a></li>
-      </ul>
-    </div>
-    <div class="columns">
-      <ul class="price">
-        <li class="header" style="background-color:#4CAF50">Pro</li>
+        <li class="grey"><a href="#" class="button">Select</a></li>
+    </ul>
+</div>
+<div class="columns">
+    <ul class="price">
+        <li class="header" style="background-color:#4CAF50">Professional</li>
         <li class="grey">$ 14.99 / year</li>
         <li>XXX</li>
         <li>XXX</li>
         <li>XXX</li>
-        <li class="grey"><a href="#" class="button">Sign Up / Login</a></li>
-      </ul>
-    </div>
-    <div class="columns">
-      <ul class="price">
-        <li class="header">Premium</li>
+        <li class="grey"><a href="#" class="button">Select</a></li>
+    </ul>
+</div>
+<div class="columns">
+    <ul class="price">
+        <li class="header">Complete</li>
         <li class="grey">$ 25.00 / year</li>
         <li>XXX</li>
         <li>XXX</li>
         <li>XXX</li>
-        <li class="grey"><a href="#" class="button">Sign Up / Login</a></li>
-      </ul>
-    </div>
-    <footer class="text-center">
-      <div class="container">
+        <li class="grey"><a href="#" class="button">Select</a></li>
+    </ul>
+</div>
+<footer class="text-center">
+    <div class="container">
         <div class="row">
-          <div class="col-12">
-            <p>©2018 ProSolv. All rights reserved.</p>
-          </div>
+            <div class="col-12">
+                <p>©2018 ProSolv. All rights reserved.</p>
+            </div>
         </div>
-      </div>
-    </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.0.0.js"></script>
-  </body>
+    </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.0.0.js"></script>
+</body>
 </html>
