@@ -101,6 +101,12 @@ td.tt {
     font-size: 18px;
 }
 
+#studentQuiz{
+    color: black; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 600px) {
     .columns {
         width: 100%;
