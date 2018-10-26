@@ -39,29 +39,61 @@
 
 <!-- main body -->
 <div class="container body-container">
-    <form>
+    <form class="needs-validation" novalidate>
         <div class="form-group">
             <label for="name_input">Name</label>
-            <input type="text" class="form-control is-valid" placeholder="Name" id="name_input"/>
+            <input type="text" class="form-control" placeholder="Name" id="name_input" required/>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please enter your name
+            </div>
         </div>
         <div class="form-group">
             <label for="email_input">Email address</label>
-            <input type="email" class="form-control is-invalid" id="email_input" placeholder="email@address.com"/>
+            <input type="email" class="form-control" id="email_input" placeholder="email@address.com" required/>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please enter a valid email address (e.g. name@example.com)
+            </div>
         </div>
         <div class="form-group">
             <label for="password_input">Password</label>
-            <input type="password" class="form-control is-valid" id="password_input" placeholder="Password"/>
+            <input type="password" class="form-control" id="password_input" placeholder="Password" required/>
         </div>
         <div class="form-group">
             <label for="confirm_password_input">Confirm Password</label>
-            <input type="password" class="form-control is-valid" id="confirm_password_input" placeholder=" Confirm Password"/>
+            <input type="password" class="form-control" id="confirm_password_input" placeholder=" Confirm Password" required/>
         </div>
         <div class="form-group">
             <label for="class_input">Class Code (optional)</label>
-            <input type="text" class="form-control is-valid" placeholder="Class Code" id="class_input"/>
+            <input type="text" class="form-control" placeholder="Class Code" id="class_input"/>
         </div>
         <button type="submit" class="btn btn-danger">Sign up</button>
     </form>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
 </div>
 
 <footer class="footer">
